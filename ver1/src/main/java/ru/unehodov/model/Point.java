@@ -6,8 +6,4 @@ public interface Point {
 
     int getY();
 
-    Figure getFigure();
-
-    void setFigure();
-
 }
