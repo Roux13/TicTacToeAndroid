@@ -1,6 +1,6 @@
 package ru.unehodov.model;
 
-public interface iPoint {
+public interface IntPoint {
 
     int getX();
 

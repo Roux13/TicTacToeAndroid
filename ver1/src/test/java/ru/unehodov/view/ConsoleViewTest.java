@@ -16,7 +16,7 @@ public class ConsoleViewTest {
     @Test
     public void displayWhenField1by1AndFigureX() {
         Field field = new SquareField(1);
-        iConsoleView view = new ConsoleView(new TicTacToeFieldImageBuilder());
+        IntConsoleView view = new ConsoleView(new TicTacToeFieldImageBuilder());
         String expected = "   0 " + System.lineSeparator()
                         + "-----" + System.lineSeparator()
                         + "0-| |" + System.lineSeparator()
@@ -34,7 +34,7 @@ public class ConsoleViewTest {
     @Test
     public void displayWhenField3by3() {
         Field field = new SquareField(3);
-        iConsoleView view = new ConsoleView(new TicTacToeFieldImageBuilder());
+        IntConsoleView view = new ConsoleView(new TicTacToeFieldImageBuilder());
         String expected = "   0 1 2 " + System.lineSeparator()
                         + "---------" + System.lineSeparator()
                         + "0-| | | |" + System.lineSeparator()

@@ -1,6 +1,6 @@
 package ru.unehodov.model;
 
-public class FigureO implements iFigure<String> {
+public class FigureO implements IntFigure<String> {
 
     private final String image = "O";
 

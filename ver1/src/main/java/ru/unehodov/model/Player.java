@@ -1,11 +1,11 @@
 package ru.unehodov.model;
 
-public class Player implements iPlayer {
+public class Player implements IntPlayer {
 
     private String name;
-    private iFigure<String> figure;
+    private IntFigure<String> figure;
 
-    public Player(String name, iFigure<String> figure) {
+    public Player(String name, IntFigure<String> figure) {
         this.name = name;
         this.figure = figure;
     }
@@ -16,7 +16,7 @@ public class Player implements iPlayer {
     }
 
     @Override
-    public iFigure<?> getFigure() {
+    public IntFigure<?> getFigure() {
         return figure;
     }
 }

@@ -1,6 +1,6 @@
 package ru.unehodov.model;
 
-public class Point implements iPoint {
+public class Point implements IntPoint {
 
     private final int x;
     private final int y;

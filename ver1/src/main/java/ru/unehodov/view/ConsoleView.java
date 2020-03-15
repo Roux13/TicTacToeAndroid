@@ -2,7 +2,7 @@ package ru.unehodov.view;
 
 import ru.unehodov.model.Field;
 
-public class ConsoleView implements iConsoleView {
+public class ConsoleView implements IntConsoleView {
 
     private ConsoleImageBuilder imageBuilder;
 

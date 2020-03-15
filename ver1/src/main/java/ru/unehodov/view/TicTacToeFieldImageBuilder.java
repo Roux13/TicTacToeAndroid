@@ -1,7 +1,7 @@
 package ru.unehodov.view;
 
 import ru.unehodov.model.Field;
-import ru.unehodov.model.iFigure;
+import ru.unehodov.model.IntFigure;
 import ru.unehodov.model.Point;
 
 import java.util.Optional;
@@ -23,7 +23,7 @@ public class TicTacToeFieldImageBuilder implements ConsoleImageBuilder {
         StringBuilder sb = new StringBuilder();
         sb.append(row).append("-|");
         for (int ceil = 0; ceil < field.getSize(); ceil++) {
-            Optional<iFigure<?>> figure = field.getFigure(new Point(row, ceil));
+            Optional<IntFigure<?>> figure = field.getFigure(new Point(row, ceil));
             if (figure.isPresent()) {
                 sb.append(figure.get().getImage());
             } else {

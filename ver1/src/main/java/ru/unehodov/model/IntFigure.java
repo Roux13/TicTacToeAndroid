@@ -1,6 +1,6 @@
 package ru.unehodov.model;
 
-public interface iFigure<T> {
+public interface IntFigure<T> {
 
     T getImage();
 
