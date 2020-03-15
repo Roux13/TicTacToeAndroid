@@ -1,9 +1,23 @@
 package ru.unehodov.model;
 
-public interface Point {
+public class Point implements iPoint {
 
-    int getX();
+    private final int x;
+    private final int y;
 
-    int getY();
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    @Override
+    public int getX() {
+        return x;
+    }
+
+    @Override
+    public int getY() {
+        return y;
+    }
 
 }
