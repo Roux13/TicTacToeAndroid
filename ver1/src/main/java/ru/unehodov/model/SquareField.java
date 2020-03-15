@@ -6,11 +6,11 @@ public class SquareField implements Field {
 
     private final int size;
 
-    private final Figure[][] figures;
+    private final iFigure[][] figures;
 
     public SquareField(int size) {
         this.size = size;
-        this.figures = new Figure[size][size];
+        this.figures = new iFigure[size][size];
     }
 
     @Override
@@ -19,12 +19,12 @@ public class SquareField implements Field {
     }
 
     @Override
-    public Optional<Figure> getFigure(Point p) {
+    public Optional<iFigure<?>> getFigure(iPoint p) {
         return Optional.ofNullable(figures[p.getX()][p.getY()]);
     }
 
     @Override
-    public void setFigure(Figure figure, Point p) {
+    public void setFigure(iFigure<?> figure, iPoint p) {
         figures[p.getX()][p.getY()] = figure;
     }
 }

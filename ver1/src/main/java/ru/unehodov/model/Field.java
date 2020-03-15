@@ -6,8 +6,8 @@ public interface Field {
 
     int getSize();
 
-    Optional<Figure> getFigure(Point p);
+    Optional<iFigure<?>> getFigure(iPoint p);
 
-    void setFigure(Figure figure, Point p);
+    void setFigure(iFigure<?> figure, iPoint p);
 
 }

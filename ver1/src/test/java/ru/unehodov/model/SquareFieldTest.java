@@ -9,35 +9,35 @@ public class SquareFieldTest {
 
     @Test
     public void setFigureWhenFieldSize1By1() {
-        Point p = new SimplePoint(0, 0);
+        iPoint p = new Point(0, 0);
         int size = 1;
-        Figure figure = Figure.X;
+        iFigure<?> figure = new FigureX();
         Field field = new SquareField(size);
         field.setFigure(figure, p);
-        Figure expected = figure;
+        iFigure<?> expected = figure;
 
-        Figure actual = field.getFigure(p).get();
+        iFigure<?> actual = field.getFigure(p).get();
 
         assertThat(actual, is(expected));
     }
 
     @Test
     public void setFigureWhenFieldSize3By3AndFigureXInX2Y2() {
-        Point p = new SimplePoint(2, 2);
+        iPoint p = new Point(2, 2);
         int size = 3;
-        Figure figure = Figure.X;
+        iFigure<?> figure = new FigureX();
         Field field = new SquareField(size);
         field.setFigure(figure, p);
-        Figure expected = figure;
+        iFigure<?> expected = figure;
 
-        Figure actual = field.getFigure(p).get();
+        iFigure<?> actual = field.getFigure(p).get();
 
         assertThat(actual, is(expected));
     }
 
     @Test
     public void getFigureWhenFieldSize3By3AndEmpty() {
-        Point p = new SimplePoint(2, 2);
+        iPoint p = new Point(2, 2);
         int size = 3;
         Field field = new SquareField(size);
         boolean expected = true;
@@ -49,14 +49,14 @@ public class SquareFieldTest {
 
     @Test
     public void getFigureWhenFieldSize10By10AndFigureOInX9Y9() {
-        Point p = new SimplePoint(9, 9);
+        iPoint p = new Point(9, 9);
         int size = 10;
-        Figure figure = Figure.O;
+        iFigure<?> figure = new FigureO();
         Field field = new SquareField(size);
         field.setFigure(figure, p);
-        Figure expected = figure;
+        iFigure<?> expected = figure;
 
-        Figure actual = field.getFigure(p).get();
+        iFigure<?> actual = field.getFigure(p).get();
 
         assertThat(actual, is(expected));
     }
