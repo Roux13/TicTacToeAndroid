@@ -2,6 +2,7 @@ package ru.unehodov.view;
 
 import org.junit.Test;
 import ru.unehodov.model.Field;
+import ru.unehodov.model.IntFigure;
 import ru.unehodov.model.SquareField;
 
 import java.io.ByteArrayOutputStream;
@@ -15,7 +16,9 @@ public class ConsoleViewTest {
 
     @Test
     public void displayWhenField1by1AndFigureX() {
-        Field field = new SquareField(1);
+        int size = 1;
+        IntFigure<String>[][] cells = new IntFigure[size][size];
+        Field field = new SquareField(cells);
         IntConsoleView view = new ConsoleView(new TicTacToeFieldImageBuilder());
         String expected = "   0 " + System.lineSeparator()
                         + "-----" + System.lineSeparator()
@@ -33,7 +36,9 @@ public class ConsoleViewTest {
 //
     @Test
     public void displayWhenField3by3() {
-        Field field = new SquareField(3);
+        int size = 3;
+        IntFigure<String>[][] cells = new IntFigure[size][size];
+        Field field = new SquareField(cells);
         IntConsoleView view = new ConsoleView(new TicTacToeFieldImageBuilder());
         String expected = "   0 1 2 " + System.lineSeparator()
                         + "---------" + System.lineSeparator()
@@ -56,7 +61,9 @@ public class ConsoleViewTest {
 
     @Test
     public void displayWhenField5by5() {
-        Field field = new SquareField(5);
+        int size = 5;
+        IntFigure<String>[][] cells = new IntFigure[size][size];
+        Field field = new SquareField(cells);
         View view = new ConsoleView(new TicTacToeFieldImageBuilder());
         String expected = "   0 1 2 3 4 " + System.lineSeparator()
                         + "-------------" + System.lineSeparator()

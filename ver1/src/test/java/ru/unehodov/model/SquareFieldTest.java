@@ -11,8 +11,9 @@ public class SquareFieldTest {
     public void setFigureWhenFieldSize1By1() {
         IntPoint p = new Point(0, 0);
         int size = 1;
+        IntFigure<String>[][] cells = new IntFigure[size][size];
         IntFigure<?> figure = new FigureX();
-        Field field = new SquareField(size);
+        Field field = new SquareField(cells);
         field.setFigure(figure, p);
         IntFigure<?> expected = figure;
 
@@ -25,8 +26,9 @@ public class SquareFieldTest {
     public void setFigureWhenFieldSize3By3AndFigureXInX2Y2() {
         IntPoint p = new Point(2, 2);
         int size = 3;
+        IntFigure<String>[][] cells = new IntFigure[size][size];
         IntFigure<?> figure = new FigureX();
-        Field field = new SquareField(size);
+        Field field = new SquareField(cells);
         field.setFigure(figure, p);
         IntFigure<?> expected = figure;
 
@@ -39,7 +41,8 @@ public class SquareFieldTest {
     public void getFigureWhenFieldSize3By3AndEmpty() {
         IntPoint p = new Point(2, 2);
         int size = 3;
-        Field field = new SquareField(size);
+        IntFigure<String>[][] cells = new IntFigure[size][size];
+        Field field = new SquareField(cells);
         boolean expected = true;
 
         boolean actual = field.getFigure(p).isEmpty();
@@ -51,8 +54,9 @@ public class SquareFieldTest {
     public void getFigureWhenFieldSize10By10AndFigureOInX9Y9() {
         IntPoint p = new Point(9, 9);
         int size = 10;
+        IntFigure<String>[][] cells = new IntFigure[size][size];
         IntFigure<?> figure = new FigureO();
-        Field field = new SquareField(size);
+        Field field = new SquareField(cells);
         field.setFigure(figure, p);
         IntFigure<?> expected = figure;
 

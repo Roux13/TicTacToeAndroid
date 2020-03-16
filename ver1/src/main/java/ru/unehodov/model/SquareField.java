@@ -4,27 +4,29 @@ import java.util.Optional;
 
 public class SquareField implements Field {
 
-    private final int size;
+    private final IntFigure<?>[][] cells;
 
-    private final IntFigure[][] figures;
-
-    public SquareField(int size) {
-        this.size = size;
-        this.figures = new IntFigure[size][size];
+    public SquareField(IntFigure<?>[][] cells) {
+        this.cells = cells;
     }
 
     @Override
     public int getSize() {
-        return size;
+        return this.cells.length;
+    }
+
+    @Override
+    public IntFigure<?>[][] getCells() {
+        return this.cells;
     }
 
     @Override
     public Optional<IntFigure<?>> getFigure(IntPoint p) {
-        return Optional.ofNullable(figures[p.getX()][p.getY()]);
+        return Optional.ofNullable(cells[p.getX()][p.getY()]);
     }
 
     @Override
     public void setFigure(IntFigure<?> figure, IntPoint p) {
-        figures[p.getX()][p.getY()] = figure;
+        cells[p.getX()][p.getY()] = figure;
     }
 }

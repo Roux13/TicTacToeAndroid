@@ -55,7 +55,9 @@ public class TicTacToeFieldImageBuilderTest {
     @Test
     public void buildRowWhenField1by1AndRow0() {
         TicTacToeFieldImageBuilder imageBuilder = new TicTacToeFieldImageBuilder();
-        Field field = new SquareField(1);
+        int size = 1;
+        IntFigure<String>[][] cells = new IntFigure[size][size];
+        Field field = new SquareField(cells);
         String expected = "0-| |" + System.lineSeparator();
 
         String actual = imageBuilder.buildRow(field, 0);
@@ -66,7 +68,9 @@ public class TicTacToeFieldImageBuilderTest {
     @Test
     public void buildRowWhenField3by3AndRow0() {
         TicTacToeFieldImageBuilder imageBuilder = new TicTacToeFieldImageBuilder();
-        Field field = new SquareField(3);
+        int size = 3;
+        IntFigure<String>[][] cells = new IntFigure[size][size];
+        Field field = new SquareField(cells);
         String expected = "0-| | | |" + System.lineSeparator();
 
         String actual = imageBuilder.buildRow(field, 0);
@@ -77,7 +81,9 @@ public class TicTacToeFieldImageBuilderTest {
     @Test
     public void buildRowWhenField3by3AndRow2() {
         TicTacToeFieldImageBuilder imageBuilder = new TicTacToeFieldImageBuilder();
-        Field field = new SquareField(3);
+        int size = 3;
+        IntFigure<String>[][] cells = new IntFigure[size][size];
+        Field field = new SquareField(cells);
         String expected = "2-| | | |" + System.lineSeparator();
 
         String actual = imageBuilder.buildRow(field, 2);
@@ -88,7 +94,9 @@ public class TicTacToeFieldImageBuilderTest {
     @Test
     public void displayWhenField1by1AndEmptyField() {
         TicTacToeFieldImageBuilder imageBuilder = new TicTacToeFieldImageBuilder();
-        Field field = new SquareField(1);
+        int size = 1;
+        IntFigure<String>[][] cells = new IntFigure[size][size];
+        Field field = new SquareField(cells);
         String expected = "   0 " + System.lineSeparator()
                         + "-----" + System.lineSeparator()
                         + "0-| |" + System.lineSeparator()
@@ -102,7 +110,9 @@ public class TicTacToeFieldImageBuilderTest {
     @Test
     public void displayWhenField3by3AndEmptyField() {
         TicTacToeFieldImageBuilder imageBuilder = new TicTacToeFieldImageBuilder();
-        Field field = new SquareField(3);
+        int size = 3;
+        IntFigure<String>[][] cells = new IntFigure[size][size];
+        Field field = new SquareField(cells);
         String expected = "   0 1 2 " + System.lineSeparator()
                         + "---------" + System.lineSeparator()
                         + "0-| | | |" + System.lineSeparator()
@@ -120,7 +130,9 @@ public class TicTacToeFieldImageBuilderTest {
     @Test
     public void displayWhenField3by3AndFigureXAtPoint00() {
         TicTacToeFieldImageBuilder imageBuilder = new TicTacToeFieldImageBuilder();
-        Field field = new SquareField(3);
+        int size = 3;
+        IntFigure<String>[][] cells = new IntFigure[size][size];
+        Field field = new SquareField(cells);
         field.setFigure(new FigureX(), new Point(0, 0));
         String expected = "   0 1 2 " + System.lineSeparator()
                 + "---------" + System.lineSeparator()
@@ -139,7 +151,9 @@ public class TicTacToeFieldImageBuilderTest {
     @Test
     public void displayWhenField3by3AndFigureOAtPoint22() {
         TicTacToeFieldImageBuilder imageBuilder = new TicTacToeFieldImageBuilder();
-        Field field = new SquareField(3);
+        int size = 3;
+        IntFigure<String>[][] cells = new IntFigure[size][size];
+        Field field = new SquareField(cells);
         field.setFigure(new FigureO(), new Point(2, 2));
         String expected = "   0 1 2 " + System.lineSeparator()
                 + "---------" + System.lineSeparator()
@@ -158,7 +172,9 @@ public class TicTacToeFieldImageBuilderTest {
     @Test
     public void displayWhenField3by3AndFigureXAtPoint02And11And20() {
         TicTacToeFieldImageBuilder imageBuilder = new TicTacToeFieldImageBuilder();
-        Field field = new SquareField(3);
+        int size = 3;
+        IntFigure<String>[][] cells = new IntFigure[size][size];
+        Field field = new SquareField(cells);
         field.setFigure(new FigureX(), new Point(0, 2));
         field.setFigure(new FigureX(), new Point(1, 1));
         field.setFigure(new FigureX(), new Point(2, 0));
