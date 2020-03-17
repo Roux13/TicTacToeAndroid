@@ -112,8 +112,8 @@ public class TicTacWinnerControllerTest {
         IntFigure<String>[][] cells = new IntFigure[size][size];
         Field field = new SquareField(cells);
         IntFigure<String> figureX = new FigureX();
-        field.setFigure(figureX, new Point(0 , 0));
-        field.setFigure(figureX, new Point(0 , 1));
+        field.setFigure(figureX, new Point(0, 0));
+        field.setFigure(figureX, new Point(0, 1));
         TicTacWinnerController winnerController = new TicTacWinnerController(field, List.of());
         boolean expected = false;
 
@@ -128,9 +128,9 @@ public class TicTacWinnerControllerTest {
         IntFigure<String>[][] cells = new IntFigure[size][size];
         Field field = new SquareField(cells);
         IntFigure<String> figureX = new FigureX();
-        field.setFigure(figureX, new Point(0 , 0));
-        field.setFigure(figureX, new Point(0 , 1));
-        field.setFigure(figureX, new Point(0 , 2));
+        field.setFigure(figureX, new Point(0, 0));
+        field.setFigure(figureX, new Point(0, 1));
+        field.setFigure(figureX, new Point(0, 2));
         TicTacWinnerController winnerController = new TicTacWinnerController(field, List.of());
         boolean expected = true;
 
@@ -145,9 +145,9 @@ public class TicTacWinnerControllerTest {
         IntFigure<String>[][] cells = new IntFigure[size][size];
         Field field = new SquareField(cells);
         IntFigure<String> figureX = new FigureX();
-        field.setFigure(figureX, new Point(1 , 0));
-        field.setFigure(figureX, new Point(1 , 1));
-        field.setFigure(figureX, new Point(1 , 2));
+        field.setFigure(figureX, new Point(1, 0));
+        field.setFigure(figureX, new Point(1, 1));
+        field.setFigure(figureX, new Point(1, 2));
         TicTacWinnerController winnerController = new TicTacWinnerController(field, List.of());
         boolean expected = true;
 
@@ -162,9 +162,9 @@ public class TicTacWinnerControllerTest {
         IntFigure<String>[][] cells = new IntFigure[size][size];
         Field field = new SquareField(cells);
         IntFigure<String> figureX = new FigureX();
-        field.setFigure(figureX, new Point(2 , 0));
-        field.setFigure(figureX, new Point(2 , 1));
-        field.setFigure(figureX, new Point(2 , 2));
+        field.setFigure(figureX, new Point(2, 0));
+        field.setFigure(figureX, new Point(2, 1));
+        field.setFigure(figureX, new Point(2, 2));
         TicTacWinnerController winnerController = new TicTacWinnerController(field, List.of());
         boolean expected = true;
 
@@ -179,9 +179,9 @@ public class TicTacWinnerControllerTest {
         IntFigure<String>[][] cells = new IntFigure[size][size];
         Field field = new SquareField(cells);
         IntFigure<String> figureO = new FigureO();
-        field.setFigure(figureO, new Point(0 , 0));
-        field.setFigure(figureO, new Point(1 , 0));
-        field.setFigure(figureO, new Point(2 , 0));
+        field.setFigure(figureO, new Point(0, 0));
+        field.setFigure(figureO, new Point(1, 0));
+        field.setFigure(figureO, new Point(2, 0));
         TicTacWinnerController winnerController = new TicTacWinnerController(field, List.of());
         boolean expected = true;
 
@@ -196,9 +196,9 @@ public class TicTacWinnerControllerTest {
         IntFigure<String>[][] cells = new IntFigure[size][size];
         Field field = new SquareField(cells);
         IntFigure<String> figureO = new FigureO();
-        field.setFigure(figureO, new Point(0 , 1));
-        field.setFigure(figureO, new Point(1 , 1));
-        field.setFigure(figureO, new Point(2 , 1));
+        field.setFigure(figureO, new Point(0, 1));
+        field.setFigure(figureO, new Point(1, 1));
+        field.setFigure(figureO, new Point(2, 1));
         TicTacWinnerController winnerController = new TicTacWinnerController(field, List.of());
         boolean expected = true;
 
@@ -213,9 +213,9 @@ public class TicTacWinnerControllerTest {
         IntFigure<String>[][] cells = new IntFigure[size][size];
         Field field = new SquareField(cells);
         IntFigure<String> figureO = new FigureO();
-        field.setFigure(figureO, new Point(0 , 2));
-        field.setFigure(figureO, new Point(1 , 2));
-        field.setFigure(figureO, new Point(2 , 2));
+        field.setFigure(figureO, new Point(0, 2));
+        field.setFigure(figureO, new Point(1, 2));
+        field.setFigure(figureO, new Point(2, 2));
         TicTacWinnerController winnerController = new TicTacWinnerController(field, List.of());
         boolean expected = true;
 
@@ -230,9 +230,9 @@ public class TicTacWinnerControllerTest {
         IntFigure<String>[][] cells = new IntFigure[size][size];
         Field field = new SquareField(cells);
         IntFigure<String> figureO = new FigureO();
-        field.setFigure(figureO, new Point(0 , 0));
-        field.setFigure(figureO, new Point(1 , 1));
-        field.setFigure(figureO, new Point(2 , 2));
+        field.setFigure(figureO, new Point(0, 0));
+        field.setFigure(figureO, new Point(1, 1));
+        field.setFigure(figureO, new Point(2, 2));
         TicTacWinnerController winnerController = new TicTacWinnerController(field, List.of());
         boolean expected = true;
 
@@ -247,9 +247,9 @@ public class TicTacWinnerControllerTest {
         IntFigure<String>[][] cells = new IntFigure[size][size];
         Field field = new SquareField(cells);
         IntFigure<String> figureX = new FigureO();
-        field.setFigure(figureX, new Point(0 , 2));
-        field.setFigure(figureX, new Point(1 , 1));
-        field.setFigure(figureX, new Point(2 , 0));
+        field.setFigure(figureX, new Point(0, 2));
+        field.setFigure(figureX, new Point(1, 1));
+        field.setFigure(figureX, new Point(2, 0));
         TicTacWinnerController winnerController = new TicTacWinnerController(field, List.of());
         boolean expected = true;
 
@@ -278,9 +278,9 @@ public class TicTacWinnerControllerTest {
         IntFigure<String>[][] cells = new IntFigure[size][size];
         Field field = new SquareField(cells);
         IntFigure<String> figureX = new FigureX();
-        field.setFigure(figureX, new Point(0 , 0));
-        field.setFigure(figureX, new Point(0 , 1));
-        field.setFigure(figureX, new Point(0 , 2));
+        field.setFigure(figureX, new Point(0, 0));
+        field.setFigure(figureX, new Point(0, 1));
+        field.setFigure(figureX, new Point(0, 2));
 
         TicTacWinnerController winnerController = new TicTacWinnerController(field, List.of());
         boolean expected = true;
@@ -296,9 +296,9 @@ public class TicTacWinnerControllerTest {
         IntFigure<String>[][] cells = new IntFigure[size][size];
         Field field = new SquareField(cells);
         IntFigure<String> figureO = new FigureO();
-        field.setFigure(figureO, new Point(0 , 0));
-        field.setFigure(figureO, new Point(1 , 1));
-        field.setFigure(figureO, new Point(2 , 2));
+        field.setFigure(figureO, new Point(0, 0));
+        field.setFigure(figureO, new Point(1, 1));
+        field.setFigure(figureO, new Point(2, 2));
 
         TicTacWinnerController winnerController = new TicTacWinnerController(field, List.of());
         boolean expected = true;
