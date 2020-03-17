@@ -1,7 +1,7 @@
 package ru.unehodov.controller;
 
-public interface Input {
+public interface Input<T> {
 
-    String apply();
+    T apply();
 
 }

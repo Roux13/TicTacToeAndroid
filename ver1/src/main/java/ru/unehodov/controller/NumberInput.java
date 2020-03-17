@@ -1,7 +1,22 @@
 package ru.unehodov.controller;
 
-public interface NumberInput {
+public class NumberInput implements Input<Integer> {
 
-    int applyNumber(String message);
+    private final Input<String> textInput;
 
+    public NumberInput(Input<String> textInput) {
+        this.textInput = textInput;
+    }
+
+    @Override
+    public Integer apply() {
+        int result = 0;
+        try {
+            result = Integer.parseInt(textInput.apply());
+        } catch (NumberFormatException e) {
+            System.out.println("Wrong input. Please, enter a number:");
+            this.apply();
+        }
+        return result;
+    }
 }
