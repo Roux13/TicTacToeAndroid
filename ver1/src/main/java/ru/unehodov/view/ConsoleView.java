@@ -1,6 +1,7 @@
 package ru.unehodov.view;
 
 import ru.unehodov.model.Field;
+import ru.unehodov.model.IntPlayer;
 
 public class ConsoleView implements IntConsoleView {
 
@@ -28,5 +29,10 @@ public class ConsoleView implements IntConsoleView {
         }
     }
 
-
+    @Override
+    public void showWinner(IntPlayer player) {
+        this.print(
+                String.format("Winner is the %s, his figure %s. %nCongratulations!!!",
+                        player.getName(), player.getFigure().getImage()));
+    }
 }

@@ -1,9 +1,7 @@
 package ru.unehodov.view;
 
 import org.junit.Test;
-import ru.unehodov.model.Field;
-import ru.unehodov.model.IntFigure;
-import ru.unehodov.model.SquareField;
+import ru.unehodov.model.*;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -82,6 +80,22 @@ public class ConsoleViewTest {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         System.setOut(new PrintStream(baos));
         view.display(field);
+        String actual = baos.toString();
+
+        assertThat(actual, is(expected));
+        System.setOut(stdOut);
+    }
+
+    @Test
+    public void showWinner() {
+        IntPlayer player = new Player("Name", new FigureX());
+        View view = new ConsoleView(new TicTacToeFieldImageBuilder());
+        PrintStream stdOut = System.out;
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(baos));
+        view.showWinner(player);
+        String expected = "Winner is the Name, his figure X. " + System.lineSeparator() +  "Congratulations!!!";
+
         String actual = baos.toString();
 
         assertThat(actual, is(expected));
