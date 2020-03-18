@@ -1,5 +1,6 @@
 package ru.unehodov.tictac.view;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import ru.unehodov.tictac.model.*;
 
@@ -11,7 +12,7 @@ import static org.junit.Assert.*;
 
 public class ConsoleViewTest {
 
-
+    @Ignore
     @Test
     public void displayWhenField1by1AndFigureX() {
         int size = 1;
@@ -31,7 +32,8 @@ public class ConsoleViewTest {
         assertThat(actual, is(expected));
         System.setOut(stdOut);
     }
-//
+
+    @Ignore
     @Test
     public void displayWhenField3by3() {
         int size = 3;
@@ -57,6 +59,7 @@ public class ConsoleViewTest {
         System.setOut(stdOut);
     }
 
+    @Ignore
     @Test
     public void displayWhenField5by5() {
         int size = 5;
