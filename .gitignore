@@ -1,74 +1,36 @@
-## generic files to ignore
-*~
-*.lock
-*.DS_Store
-*.swp
-*.out
-*.log
+#built application files
+*.apk
+*.ap_
 
-# rails specific
-*.sqlite3
-config/database.yml
-log/*
-tmp/*
+# files for the dex VM
+*.dex
 
-# java specific
+# Java class files
 *.class
 
-# python specific
-*.pyc
+# generated files
+bin/
+gen/
 
-# xcode/iphone specific
-build/*
-*.pbxuser
-*.mode2v3
-*.mode1v3
-*.perspective
-*.perspectivev3
-*~.nib
+# Local configuration file (sdk path, etc)
+local.properties
 
-# akka specific
-logs/*
+# Windows thumbnail db
+Thumbs.db
 
-# sbt specific
-target/
-project/boot
-lib_managed/*
-project/build/target
-project/build/lib_managed
-project/build/src_managed
-project/plugins/lib_managed
-project/plugins/target
-project/plugins/src_managed
-project/plugins/project
+# OSX files
+.DS_Store
 
-core/lib_managed
-core/target
-pubsub/lib_managed
-pubsub/target
-
-# eclipse specific
-.metadata
-jrebel.lic
-.settings
-.classpath
-.project
-
-.ensime*
-*.sublime-*
-.cache
-
-# intellij
-*.eml
+# Android Studio
 *.iml
-*.ipr
-*.iws
-.*.sw?
 .idea
-
-# paulp script
-/.lib/
-
-build
+#.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
 .gradle
-*.pid
+build/
+.navigation
+captures/
+output.json
+
+#NDK
+obj/
+.externalNativeBuild
