@@ -17,7 +17,7 @@
         android:textSize="30sp" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/switch_cpu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -35,7 +35,6 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:text="X"
             android:textSize="30sp" />
 
         <Button
@@ -71,7 +70,6 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:text="O"
             android:textSize="30sp" />
 
         <Button
@@ -110,4 +108,12 @@
             android:layout_weight="1"
             android:textSize="30sp" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/whose_turn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next move:  X"
+        android:textAlignment="center"
+        android:textSize="18sp" />
 </LinearLayout>
