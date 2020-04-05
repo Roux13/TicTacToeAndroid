@@ -8,7 +8,7 @@ All classes without output/input were moved to this project.
 * The game uses standard rules for field 3 by 3.
 * You can play versus human or CPU (This uses simple random CPU).
 
-![Image1 of TicTacAndroidScreen](/images/TicTacToeAndroid1.png)
+![Image1 of TicTacAndroidScreen](/images/TicTacToeAndroid2.png)
 
 ## Contacts
  Skype: roux13333
