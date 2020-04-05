@@ -4,5 +4,5 @@
     <string name="player1_name">player X</string>
     <string name="player2_name">player O</string>
     <string name="x0y0">x0y0</string>
-    <string name="next_turn">\"Next turn: \"</string>
+    <string name="next_turn">Next turn:</string>
 </resources>

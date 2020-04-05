@@ -186,7 +186,7 @@ public class MainFragment extends Fragment {
                 buttons.get(id).setText("");
             }
         }
-        whoseTurnTextView.setText(String.format("%s%s", getString(R.string.next_turn), players.get(whichPlayer).getName()));
+        whoseTurnTextView.setText(String.format("%s  %s", getString(R.string.next_turn), players.get(whichPlayer).getName()));
     }
 
     private void showWinner(IPlayer player) {
