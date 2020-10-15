@@ -1,8 +1,6 @@
-package ru.job4j.tictactoe.model;
+package ru.nehodov.tictactoe.model;
 
 import org.junit.Test;
-
-import java.lang.reflect.Field;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
